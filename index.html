@@ -42,134 +42,21 @@
             scroll-behavior: smooth;
         }
         .profile-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 20px;
-            box-shadow: var(--shadow-lg);
-        }
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* About Section - Fixed Photo Styling */
-.about-image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-image::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: 20px;
-    bottom: 20px;
-    background: var(--gradient-1);
-    border-radius: 20px;
-    z-index: -1;
-}
-
-.profile-image {
     width: 100%;
-    max-width: 350px;
-    height: 350px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
     border: 4px solid white;
 }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-/* Alternative: Circular Profile Image */
-.profile-image-circle {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    box-shadow: var(--shadow-lg);
-    border: 6px solid white;
-}
-
-/* Placeholder styling (if still using placeholder) */
-.about-placeholder {
-    width: 100%;
-    max-width: 350px;
-    height: 350px;
-    background: var(--bg-secondary);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: var(--text-light);
-    border: 2px dashed var(--text-light);
-    text-align: center;
-    padding: 1rem;
-}
-
-.about-placeholder i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    opacity: 0.5;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .profile-image,
-    .profile-image-circle,
-    .about-placeholder {
-        width: 250px;
-        height: 250px;
-        max-width: 100%;
-    }
-    
-    .about-image::before {
-        top: -15px;
-        left: -15px;
-        right: 15px;
-        bottom: 15px;
-    }
-}
-
-
-        .simple-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.contact-link {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.2rem;
-  color: var(--primary-color);
-  text-decoration: none;
-  background: white;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  box-shadow: var(--shadow-md);
-  transition: background 0.2s, box-shadow 0.2s;
-}
-
-.contact-link i {
-  font-size: 1.7rem;
-}
-
-.contact-link:hover {
-  background: var(--gradient-1);
-  color: white;
-  box-shadow: var(--shadow-lg);
-}
+        
 
 
         /* Navigation Styles */
@@ -439,6 +326,40 @@
             margin: 0 auto;
         }
 
+
+        .simple-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  box-shadow: var(--shadow-md);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.contact-link i {
+  font-size: 1.7rem;
+}
+
+.contact-link:hover {
+  background: var(--gradient-1);
+  color: white;
+  box-shadow: var(--shadow-lg);
+}
+
+
         /* About Section */
         .about-content {
             display: grid;
@@ -448,33 +369,17 @@
         }
 
         .about-image {
-            position: relative;
-        }
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .about-image::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: -20px;
-            right: 20px;
-            bottom: 20px;
-            background: var(--gradient-1);
-            border-radius: 20px;
-            z-index: -1;
-        }
+        
 
-        .about-placeholder {
-            width: 100%;
-            height: 400px;
-            background: var(--bg-secondary);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            color: var(--text-light);
-            border: 2px dashed var(--text-light);
-        }
+        
 
         .about-text {
             font-size: 1.1rem;
